@@ -1,0 +1,230 @@
+
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.modal {
+    
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.407);
+  position: fixed;
+  top:0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  
+  transition: 0.5s;
+}
+
+.modal.active{
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.modal__content{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  height: 480px;
+  width: 400px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+
+}
+
+.modal__content.active{
+transform: scale(1);
+}
+
+option {
+  font-weight: normal;
+  height: 90px;
+  width: 90px;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  
+  
+  
+}
+
+select:not(:-internal-list-box) {
+  overflow: visible !important;
+ 
+
+}
+
+form{
+     
+    justify-content: center;
+   
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    top: 60%;
+    left: 50%;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  
+    
+    
+    padding: 50px 35px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.384);
+}
+
+form *{
+  z-index: 2;
+  font-family: "AlumniSansPinstripe1";;
+    color: #000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+  z-index: 2;
+  font-family: "AlumniSansPinstripe1";
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: var(--purple);
+}
+.pp{
+  
+  font-family: "AlumniSansPinstripe1";
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: var(--purple);
+}
+
+label{
+  z-index: 2;
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+}
+input{
+  z-index: 2;
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    height: 50px;
+    width: 120%;
+   
+    
+    padding: 15px 0;
+    font-size: 18px;
+    margin-top: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ee{
+  color: #000;
+  font-size: 10px;
+}
+.rr{
+  color: #ffffff;
+}
+.yy{
+  background-color: #e2a541;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255, 255, 255, 0.551);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+.ggg{
+  color: var(--purple); 
+  font-family: "AlumniSansPinstripe1";;
+  size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.containerr{
+  color: var(--purple); 
+  font-family: "AlumniSansPinstripe1";;
+  size: 24px;
+  text-align: center;
+
+  
+}
+
+
+.select .header select {
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  border-width: 0;
+  width: 100%;
+  flex: 1;
+  display: none;
+  
+}
+
+.gggg{
+  height: auto;
+  width: 81%;
+  font-weight: 600;
+}
+.opn-btn{
+margin: 10px 20px;
+padding: 20px;
+font-size: 2rem;
+}

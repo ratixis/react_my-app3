@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+@font-face {
+    font-family:"AlumniSansPinstripe1" ;
+    src: url("./../../img/icons/Tinos-Regular.ttf") format('woff2');
+}
+
+
+.header {
+    
+    
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+    font-family: "AlumniSansPinstripe1";
+
+    color: var(--header-text);
+    text-align: center;
+    
+
+}
+
+video {
+    filter: brightness(60%);
+ }
+ 
+.video-bg{
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    
+}
+.bg-overlay{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.142);
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.gg{
+    color: #fff; 
+    font-family: "AlumniSansPinstripe1";
+    size: 16px;
+    font-weight: bolder;
+}
+
+.text-home {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    font-family: "AlumniSansPinstripe1";
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    justify-self: flex-end;
+    font-size: 30px;
+    
+}
+.vt{
+    padding: 0px 20px 0px 0px ;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avt{
+    
+    z-index: 1; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 0px 50px 0px ;
+}
+/*#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }*/
+
+
+.header__wrapper {
+    padding: 0 15px;
+    max-width: 660px;
+}
+
+.header__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+    text-align: center;
+}
+
+.header__title strong {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.header__title em {
+    font-style: normal;
+    color: var(--accent);
+    font-size: 50px; 
+}
+
+.header__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.333;
+}
+
+.header__text p + p{
+    margin-top: 0.5em;
+}
