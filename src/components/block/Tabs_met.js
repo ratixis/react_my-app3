@@ -28,9 +28,10 @@ function Tabs_met() {
                      в диапазонах 250 метров (м) 1 и 2, скорректированную на атмосферные условия, такие как газы,
                       аэрозоли и рэлеевское рассеяние.
                     
-                      <PremCalendar />
+                     <PremCalendar />  
 
-                </p>    
+                </p>   
+                
          </div>
 
         <div className= {toggleState=== 2 ? "content active-content"  : "content"} >

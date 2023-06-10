@@ -21,7 +21,7 @@ function Registration ({active, setActive, children} ) {
 
                         <div className= {"gggg"}>
                           
-                        <button className="yy">Зарегистрироваться</button>
+                        <button className='yy buttonn'>Зарегистрироваться</button>
                         </div>
             </div>
  </div>

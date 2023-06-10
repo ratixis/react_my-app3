@@ -29,14 +29,14 @@ function Header() {
      <div className={"avt"}>
                         
                         
-             <button className="yy rr"  onClick={() => setModalActive(true)}> Регистрация </button>
+             <button className='yy rr buttonn'  onClick={() => setModalActive(true)}> Регистрация </button>
               <Registration active={modalActive} setActive={setModalActive}/>
                         
 
-
+<div className={"avtt"}>
              <button  className="rr"onClick={() => setModallActive(true)}> Войти </button> 
              <Authorization active={modallActive} setActive={setModallActive}/>                     
-                                 
+             </div>                   
      </div>
      
                 

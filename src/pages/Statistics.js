@@ -18,8 +18,8 @@ function Statistics() {
      });
     
      
-    return(
-<main className="section">
+    return( 
+<main className="box">
         <div className="container">
                 <h1 className="title-1">Статистика</h1>
                 <h1 className="title-2">Данные по лесным пожарам в Якутии </h1>

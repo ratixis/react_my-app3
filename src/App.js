@@ -8,7 +8,6 @@ import Statistics from "./pages/Statistics";
 import Project from "./pages/Project";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./utils/scrollToTop";
-
 import Mark from "./pages/mark";
 import PrivateRoute from "./utils/PrivateRoute";
 
