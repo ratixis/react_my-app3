@@ -8,7 +8,6 @@ import Statistics from "./pages/Statistics";
 import Project from "./pages/Project";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./utils/scrollToTop";
-import Mark from "./pages/mark";
 import PrivateRoute from "./utils/PrivateRoute";
 
 
@@ -23,7 +22,6 @@ function App() {
     
           <Routes>
                 <Route element={<PrivateRoute/>}>
-                <Route path="/mark" element={<Mark />}/>
                 <Route path="/Project" element={<Project/>} />
                 <Route path="/Projects/:id" element={<Projects/>} />
                 <Route path="/Statistics" element={<Statistics />} />

@@ -1,10 +1,11 @@
 import "./sty.css"
+import {useNavigate} from 'react-router-dom'
 import { sha256 } from 'js-sha256';
-
 import axios from 'axios';
 
-function Authorization ({active, setActive, children} ) {
 
+function Authorization ({active, setActive, children} ) {
+  const navigate = useNavigate();
     async function componentDidMount (e)  {
     
     
@@ -13,8 +14,9 @@ function Authorization ({active, setActive, children} ) {
         var user  = e.target.elements.user.value;
         try {
           var response = await axios.get(`http://localhost:5166/api/users/${user}/${sha256(pass)}`);
-          if (response.status === axios.HttpStatusCode.Ok) {
-            console.log(response);
+          if ({response})  {
+            console.log(response); 
+            navigate('/mark');
           }
         }
         catch(exception) {
@@ -37,8 +39,9 @@ function Authorization ({active, setActive, children} ) {
           <label for="password">Пароль</label>
           <input type="password" placeholder="Пароль" id="password"  name="pass"/>
           <br/> <br/>
-              <div className={"gggg"}>
-              <button className='yy buttonn'>Войти</button>
+              <div className={''}>
+
+              <button className='yy buttonn gggg'>Войти</button>
               </div> 
               </form>
                       </div>

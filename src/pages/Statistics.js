@@ -7,7 +7,7 @@ import ch_ym1 from "./../img/projects/ch_ym.svg";
 
 import React, { useState } from 'react';
 import {Stat} from "../helpers/statList";
-import { NavLink } from "react-router-dom";
+
 
 
 function Statistics() {
@@ -140,9 +140,7 @@ function Statistics() {
           </div>
           <br/><br/> 
           <p className="ee">* Источник: https://14.mchs.gov.ru/ </p>
-          <NavLink to="/mark" >
-            <button className="yy">Зарегистрироваться</button>
-                </NavLink>
+          
       </div>  
          
        </div> 

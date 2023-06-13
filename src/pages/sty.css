@@ -202,6 +202,9 @@ input{
 }
 
 
+
+
+
 .select .header select {
   appearance: none;
   font-family: inherit;
@@ -217,7 +220,7 @@ input{
 .gggg{
   height: auto;
   width: 81%;
-  font-weight: 600;
+  
 }
 .opn-btn{
 margin: 10px 20px;
@@ -226,10 +229,16 @@ font-size: 2rem;
 }
 .box {
  size: 1;
+ 
+}
+
+.modall{
+  display: none;
+
 }
 
 .box select {
-  background-color: #e2a541;;
+  background-color: #e2a441ef;;
   color: white;
   padding: 12px;
   width: 190px;
@@ -239,6 +248,7 @@ font-size: 2rem;
   -webkit-appearance: button;
   appearance: button;
   outline: none;
+  
 }
 
 
