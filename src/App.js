@@ -9,6 +9,7 @@ import Project from "./pages/Project";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./utils/scrollToTop";
 import PrivateRoute from "./utils/PrivateRoute";
+import Homme from "./pages/Homme";
 
 
 
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/Project" element={<Project/>} />
                 <Route path="/Projects/:id" element={<Projects/>} />
                 <Route path="/Statistics" element={<Statistics />} />
+                <Route  path="/Homme" element={<Homme />} />
                 </Route>
                 
                <Route  path="/" element={<Home />} />

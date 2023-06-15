@@ -16,7 +16,7 @@ function Authorization ({active, setActive, children} ) {
           var response = await axios.get(`http://localhost:5166/api/users/${user}/${sha256(pass)}`);
           if ({response})  {
             console.log(response); 
-            navigate('/mark');
+            navigate('/Statistics');
           }
         }
         catch(exception) {

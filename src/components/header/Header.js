@@ -7,7 +7,7 @@ import Registration from "./../../pages/Registration";
 
 import { useState } from "react";
 import Authorization from "../../pages/Authorization";
-function Header(active, setActive) {
+function Header(setActive,active) {
  const[modalActive, setModalActive]= useState (false);
  const[modallActive, setModallActive] = useState (false);
     
@@ -26,7 +26,7 @@ function Header(active, setActive) {
             <p> Здесь вы можете найти данные о пожарной ситуации в Якутии с 2002г по 2021г</p>
             
      </div>
-     <div className={active ? "modal active" : "modal"} onClick={()=> setActive (true)}>
+     <div className={active ? "modal active avt" : "modal avtt"} onClick={()=> setActive (false)}>
      <div className={"avt"}>
                         
                         
@@ -39,8 +39,8 @@ function Header(active, setActive) {
              <Authorization active={modallActive} setActive={setModallActive}/>                     
              </div>                   
      </div>
-     </div>
-                
+     
+     </div>         
     </div>
      
     );

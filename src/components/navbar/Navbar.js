@@ -17,14 +17,14 @@ function Navbar() {
         
                
             <div className="nav-row">
-            <NavLink to="/" className="logo">
+            <NavLink to="/Homme" className="logo">
                 <img src={ log1 } alt="Light mode" className="users"/>
                 </NavLink>
     
 
                 <ul className="nav-list">
                     <li className="nav-list__item">
-                        <NavLink to="/" className={({isActive}) =>  isActive ? activLink: normalLink} > 
+                        <NavLink to="/Homme" className={({isActive}) =>  isActive ? activLink: normalLink} > 
                         Главная </NavLink>
                     </li> 
                     

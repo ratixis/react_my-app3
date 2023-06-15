@@ -44,6 +44,7 @@ function Tabs_met() {
                      установленной на спутниках  Terra и Aqua. Для мониторинга используется стандартный продукт MODIS Land MOD14/MYD14
                     (Fire and Thermal Anomalies).
                     <PremCalendar />
+                    
                     </p>
 
                     </div>

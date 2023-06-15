@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./projs.css";
-import PremCalendar from "../calendar/PremCalendar";
+import PremYCalendar from "../calendar/PremYCalendsr";
+
 
 function Tabs_tvv() {
   const [toggleState, setToggleState] = useState(1);
@@ -24,8 +25,7 @@ function Tabs_tvv() {
                 <hr />
                     <p>
                   
-                    
-                    <PremCalendar />
+                   <PremYCalendar/>                  
                
                 </p>    
          </div>
@@ -34,7 +34,7 @@ function Tabs_tvv() {
                     <h2>MOD14A1</h2>
                     <hr />
                     <p>
-                    <PremCalendar />
+                    <PremYCalendar/>  
                     </p>
 
                     </div>
@@ -43,7 +43,7 @@ function Tabs_tvv() {
                         <h2> FIRMS </h2>
                         <hr />
                         <p>
-                        <PremCalendar />
+                        <PremYCalendar/>  
                         </p>
 
                 </div>

@@ -222,6 +222,10 @@ input{
   width: 81%;
   
 }
+.textauh{
+  color: var(--purple);
+  display: flex;
+}
 .opn-btn{
 margin: 10px 20px;
 padding: 20px;
