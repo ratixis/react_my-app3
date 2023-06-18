@@ -18,7 +18,7 @@ function Registration ({active, setActive} ) {
   const [nameDirty  , setNameDirty ] = useState(false);
   const [passDirty  , setPassDirty ] = useState(false);
 
-  const [emailError , setEmailError] = useState('Емаейл не может быть пустым');
+  const [emailError , setEmailError] = useState('Email не может быть пустым');
   const [nameError , setNameError] = useState('Логин не может быть пустым');
   const [passError , setPassError] = useState('Пароль не может быть пустым');
   
@@ -66,7 +66,7 @@ break
   setEmail(e.target.value)
   const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   if (!re.test(String(e.target.value).toLowerCase())){
-setEmailError('Некорректный емейл')
+setEmailError('Некорректный Email')
   }
   else{
     setEmailError("")
@@ -104,7 +104,7 @@ setEmailError('Некорректный емейл')
         
           <label for="name">Имя пользователя</label>
           {(nameDirty && nameError )&& <div style={{ color: "#9f1515",display: 'flex'}}>{nameError}</div>}
-          <input onBlur={e => blurHandler(e)}  type="text" placeholder="Имя пользователя" id="name"  name="name"value={name} onChange={e=>nameHandler(e)}/>
+          <input onBlur={e => blurHandler(e)}  type="text" placeholder="Логин" id="name"  name="name"value={name} onChange={e=>nameHandler(e)}/>
                     
           <label for="pass">Пароль</label>
           {(passDirty && passError )&& <div style={{ color: "#9f1515",display: 'flex'}}>{passError}</div>}

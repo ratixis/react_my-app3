@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./projs.css";
 import PremCalendar from "../calendar/PremCalendar";
+import PremCalCO from "../calendar/PremCalCO";
+import PremCalAOD from "../calendar/PremCalAOD";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -13,7 +15,7 @@ function Tabs() {
     <>
     <div className="containerrss"> 
                 <div className="bloc-tabs">
-                    <div className= {toggleState=== 1 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(1)} > AAI </div>
+                    <div name="" className= {toggleState=== 1 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(1)} > AAI </div>
                     <div className= {toggleState=== 2 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(2)} > CO </div>
                     <div className= {toggleState=== 3 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(3)} > AOD </div>
                 </div>
@@ -27,10 +29,10 @@ function Tabs() {
                     который может быть использован для определения присутствия аэрозолей, 
                     поглощающих ультрафиолетовое излучение, таких как пыль и дым
                     
-              
-                    <PremCalendar />
+              </p> <br/> <br/>
+                    <PremCalendar/>
 
-                </p>  
+                 
                
          </div>
 
@@ -40,8 +42,8 @@ function Tabs() {
                     <p>
                     Монооксид углерода (химическая формула CO) - ядовитый легковоспламеняющийся газ,
                      который не имеет цвета, запаха, вкуса и немного менее плотен, чем воздух.
-                     <PremCalendar />
-                    </p>
+                  </p> <br/> <br/>  <PremCalCO/>
+                    
 
                     </div>
 
@@ -52,8 +54,8 @@ function Tabs() {
                         Глубиной оптического аэрозоля (AOD) является мерой аэрозолей 
                         (e.г., городская дымка, частицы дыма, пыль пустыни, морская соль), 
                         распределенная в воздушном столбе от прибора (поверхность Земли) до верхней части атмосферы.
-                        <PremCalendar />
-                        </p>
+                    </p>  <br/> <br/>  <PremCalAOD/>
+                        
 
                 </div>
             </div>

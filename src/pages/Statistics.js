@@ -28,7 +28,7 @@ function Statistics() {
 
        <div className="containerr">
        
-       <select value={value}  autocomplete="off" required  onChange={e=>setValue(e.target.value) }>
+       <select value={value}   autocomplete="off" required  onChange={e=>setValue(e.target.value) }>
         {options}
         
       </select>   <br/>        <br/>   

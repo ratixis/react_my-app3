@@ -14,39 +14,24 @@ function Tabs_tvv() {
     <>
     <div className="containerrss"> 
                 <div className="bloc-tabs">
-                    <div className= {toggleState=== 1 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(1)} > MYD14A1 </div>
-                    <div className= {toggleState=== 2 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(2)} > MOD14A1</div>
-                    <div className= {toggleState=== 3 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(3)} > FIRMS </div>
+                    <div className= {toggleState=== 1 ?"tabs active-tabs" : "tabs"} onClick={()=> toggleTab(1)} >  </div>
+                    
                 </div>
 
          <div className="content-tabs">
                 <div className= {toggleState=== 1 ? "content active-content"  : "content"}  >
-                <h>MYD14A1</h>
+                <h></h>
                 <hr />
-                    <p>
-                  
+                    <p>Выберите год, который вам нужен.Затем выберите продукт, который вам интересен и нажмите кнопку "Найти".</p> 
+                  <br/><br/><br/>
                    <PremYCalendar/>                  
                
-                </p>    
+                   
          </div>
 
-        <div className= {toggleState=== 2 ? "content active-content"  : "content"} >
-                    <h2>MOD14A1</h2>
-                    <hr />
-                    <p>
-                    <PremYCalendar/>  
-                    </p>
+        
 
-                    </div>
-
-        <div  className= {toggleState=== 3 ? "content active-content"  : "content"}   >
-                        <h2> FIRMS </h2>
-                        <hr />
-                        <p>
-                        <PremYCalendar/>  
-                        </p>
-
-                </div>
+         
             </div>
        </div>
        </>
