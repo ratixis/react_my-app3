@@ -82,7 +82,7 @@ function PremYCalendar (){
 
         </select>
         </div>
-                <Button  label="Найти" type="submit" icon="pi pi-check" />
+                <Button  label="Скачать" type="submit" icon="pi pi-check" />
           </div>
           <div>
           <div>

@@ -1774,7 +1774,7 @@
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-invalid > .p-button {
-  border-color: #e24c4c;
+  border-color: #9f1515;
 }
 
 .p-button {
@@ -1792,9 +1792,9 @@
   border-color: #cf9941cd;
 }
 .p-button:enabled:active, .p-button:not(button):not(a):not(.p-disabled):active {
-  background: #4338CA;
+  background: #9f1515;
   color: #ffffff;
-  border-color: #4338CA;
+  border-color: #9f1515;
 }
 .cent{
   height: auto;

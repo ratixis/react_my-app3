@@ -1,4 +1,4 @@
-import Download from "../components/download/Download";
+
 import { useParams } from "react-router-dom";
 import {  project } from "../helpers/projectList";
 
@@ -25,7 +25,7 @@ const projects = project[id];
                 {projects.src}
                 </div>
                 
-                <Download link="..."/>
+                
 
             </div>
             </div>

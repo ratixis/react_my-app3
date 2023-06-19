@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'primereact/button';
 import { Calendar } from "primereact/calendar";
-import { useState } from "react";
+
 import axios from 'axios';
 
 import './theme.css';
@@ -12,7 +12,7 @@ function PremYyNOAACalendar (){
     let minDate = new Date(2002, 0, 1);
     let maxDate = new Date(2021, 11, 31);
     
-    const [date, setDate] = useState(null);
+    
     
     async function component (e)  {
     
@@ -61,12 +61,12 @@ function PremYyNOAACalendar (){
                       maxDate={maxDate}
                       readOnlyInput
                       name='date' 
-                      onChange={(e) => setDate(e.value)} view="year"
+                       view="year"
                       dateFormat="yy"
 
                         />
           
-                <Button  label="Найти" type="submit" icon="pi pi-check" />
+                <Button  label="Скачать" type="submit" icon="pi pi-check" />
           </div>
          
 

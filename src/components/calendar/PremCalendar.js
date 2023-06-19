@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from "react";
+
 import { Button } from 'primereact/button';
 import { Calendar } from "primereact/calendar";
 import axios from 'axios';
@@ -12,7 +12,7 @@ function PremCalendar (){
   
   let minDate = new Date(2018, 4, 1);
   let maxDate = new Date(2021, 7, 31);
-  const [date, setDate] = useState(null);
+  
  
   async function component (e)  {
     
@@ -63,7 +63,7 @@ function PremCalendar (){
                        maxDate={maxDate}
                        readOnlyInput
                        name='month'
-                       onChange={(e) => setDate(e.value)} view="month"
+                        view="month"
                        dateFormat="m/yy"
                        
 
@@ -73,7 +73,7 @@ function PremCalendar (){
                         
                   
                 
-                <Button label="Найти" type="submit" icon="pi pi-check" />
+                <Button label="Скачать" type="submit" icon="pi pi-check" />
           </div>
       </form>
     );
