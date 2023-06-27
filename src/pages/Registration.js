@@ -22,6 +22,9 @@ function Registration ({active, setActive} ) {
   const [nameError , setNameError] = useState('Логин не может быть пустым');
   const [passError , setPassError] = useState('Пароль не может быть пустым');
   
+ 
+ 
+ 
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
